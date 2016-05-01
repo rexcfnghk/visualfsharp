@@ -14,6 +14,11 @@ namespace Microsoft.FSharp.Core
     [<CompilationRepresentation(CompilationRepresentationFlags.ModuleSuffix)>]
     [<RequireQualifiedAccess>]
     module String = 
+    
+        /// <summary>Represents the empty string.</summary>
+        /// <returns>The empty string.</returns>
+        [<CompiledName("Empty")>]
+        val empty: string
 
         /// <summary>Returns a new string made by concatenating the given strings
         /// with separator <c>sep</c>, that is <c>a1 + sep + ... + sep + aN</c>.</summary>

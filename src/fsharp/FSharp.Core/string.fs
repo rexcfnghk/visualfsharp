@@ -15,6 +15,9 @@ namespace Microsoft.FSharp.Core
 
         let inline emptyIfNull str = 
             if str = null then "" else str
+            
+        [<CompiledName("Empty")>]
+        let empty = ""
 
         [<CompiledName("Concat")>]
         let concat sep (strings : seq<string>) =  
